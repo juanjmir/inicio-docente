@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Insumos/Materiales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            background-color: white;
+            border: 1px solid #007bff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.1);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-container">
+                    <h2 class="text-center mb-4 text-primary">Solicitud de Insumos/Materiales</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombreProfesor" class="form-label">Nombre del profesor</label>
+                            <input type="text" class="form-control" id="nombreProfesor" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="asignatura" class="form-label">Asignatura</label>
+                            <input type="text" class="form-control" id="asignatura" required>
+                        </div>
+                         <div class="mb-3">
+                            <label for="fechaActividad" class="form-label">Fecha de la actividad</label>
+                            <input type="date" class="form-control" id="fechaActividad" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="horarioInicio" class="form-label">Horario de inicio</label>
+                            <input type="text" class="form-control" id="horarioInicio" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="horarioFinal" class="form-label">Horario finalización actividad</label>
+                            <input type="text" class="form-control" id="horarioFinal" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="laboratorio" class="form-label">Laboratorio</label>
+                            <select class="form-select form-select-lg" id="laboratorio" required>
+                                <option value="">Seleccione un laboratorio</option>
+                                <option>LTEL</option>
+                                <option>LINF</option>
+                                <option>LEICA</option>
+                                <option>LEICA 2</option>
+                                <option>LNET</option>
+                                <option>C2</option>
+                                <option>C8</option>
+                                <option>C6</option>
+                                <option>ALCR</option>
+                                <option>ALCS</option>
+                                <option>ALPLC</option>
+                                <option>ALEP</option>
+                                <option>ALCP</option>
+                                <option>ALEE</option>
+                                <option>ALCE</option>
+                                <option>A405</option>
+                                <option>A406</option>
+                                <option>MAC1</option>
+                                <option>MAC2</option>
+                                <option>TD1</option>
+                                <option>TD2</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="insumos" class="form-label">Insumos/Materiales</label>
+                            <textarea class="form-control" id="insumos" rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
