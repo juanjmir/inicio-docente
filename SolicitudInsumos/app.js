@@ -18,7 +18,7 @@ form.addEventListener('submit', e => {
   formData.append('horarioFinal', document.getElementById('horarioFinal').value);
   formData.append('laboratorio', document.getElementById('laboratorio').value);
   formData.append('insumos', document.getElementById('insumos').value);
-  formData.append('insumos', document.getElementById('correo').value);
+  formData.append('correo', document.getElementById('correo').value);
 
   // Envío al servidor (Google App Script)
   fetch(scriptURL, {
