@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyNeI0UQ4YisqdbSttaB83QhYN7X0F0PE-2IIRvUibSjfy-Tz5iyF8mo9yc3tMyf1vDfw/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx2Xx40lpIeXG77fSJK0rh71c-7Xl0Z84CUlAcWYfIQmTm06V3znuXep3YHMLBo5dj8Fg/exec';
 
 const form = document.querySelector('form');
 
